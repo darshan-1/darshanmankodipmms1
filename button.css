@@ -1,0 +1,68 @@
+
+.card {
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+    width: 10vw;
+    height: 10vw;
+    background: transparent;
+    color: rgba(0, 0, 0, 0.3)
+}
+.card .image {
+    width: 10vw;
+   height: 10vw;
+    /* overflow: hidden; */
+}
+.card .image p {
+    transition: .5s;
+}
+.card:hover .image p{
+    opacity: .5;
+    transform: translateX(30%);
+    color: transparent;
+}
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3vw;
+	font-size: 1vw;
+    height: 8vw;
+    background: transparent;
+    transition: .5s;
+    transform-origin: left;
+    transform: perspective(2000px) rotateY(-90deg);
+ 
+}
+.card:hover .details {
+    transform: perspective(2000px) rotateY(0deg);
+    
+}
+.card .details .center {
+   
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 2vw;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .card,.center {
+     
+        margin: -60vw -5vw;
+        width: 5vw;
+        font-size: 5vw;
+    }
+    .center{
+        margin: 8vw 0vw;
+        width: 20vw;
+        font-size: 3vw;
+
+    }
+  }

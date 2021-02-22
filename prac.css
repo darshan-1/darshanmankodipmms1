@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+#outer {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #inner {
+    display: inline-block;
+  }
+
+
+body {
+    margin: 0;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.progress-container {
+    position: fixed;
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: black;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, black, grey);
+    width: 0%;
+}
+/* #################   header ########################## */
+.header {
+
+    overflow: hidden;
+    width: 100%;
+    height: 8vw;
+    font-size: 2vw;
+}
+
+.header a {
+  
+    float: left;
+    margin-left: 4px;
+    border-right: 0.3vw solid #00203FFF;
+    border-left: 0.3vw solid #00203FFF;
+    color: #89ABE3FF;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 2vw;
+    line-height: 2vw;
+    border-radius: 4px;
+    
+}
+
+.header a.logo {
+
+    float: left;
+    color: #89ABE3FF;
+    text-align: center;
+    /* padding: 12px;  */
+    text-decoration: none;
+    font-size: 2vw;
+    line-height: 2vw;
+    border-radius: 4px;
+}
+/* ############   header over ############### */
+
+/* --------------------------------------------------------------- */
+/* ###########  Menu   ######################## */
+
+.menu a {
+    float: left;
+    color: #89ABE3FF;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+    
+}
+
+.menu a:hover {
+
+    border-top: 0.3vw solid #00203FFF;
+    border-bottom: 0.3vw solid #00203FFF;
+    border-collapse: collapse;
+    /* color: black; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: italics;
+    transition: .6s;
+
+
+}
+
+.menu a.active {
+    border: 0.3vw solid;
+    border-radius: 0.5vw;
+    font-weight: bold;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+    /* color: black; */
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--c1: #00203FFF;
+	--c2: transparent;
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+.menu-right {
+
+    float: right;
+
+}
+/* ###########  Menu over  ######################## */
+
+/* ###########  Menu 2 ######################## */
+ .menu2 {
+    float: left;
+    width: 100;
+    transform: translateY(-10%);
+    color: #89ABE3FF;
+    text-align: center;
+    /* padding: 12px ; */
+    text-decoration: none;
+    font-size: 2vw;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.menu2 a{
+    float: left;
+    /* transform: translateY(0%); */
+    border-bottom: 0.2vw solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    text-align: center;
+    /* padding: 12px; */
+    text-decoration: none;
+    font-size: 0.8vw;
+    line-height: 2vw;
+    border-radius: 0.3vw;
+    
+
+}
+
+.menu2 a:hover{
+    
+    border-top: 0.2vw solid white;
+    border-bottom: 0.2vw solid white;
+    border-left: 0.2vw solid white;
+    border-right: 0.2vw solid white;
+    border-collapse: collapse;
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .6s;
+
+}
+
+
+
+/* ###########  Menu 2 over  ######################## */
+
+
+/* ###########  parallax bg iMAGE 1  ######################## */
+.parallax {
+    /* The image used */
+    background-image: url("images.jpeg");
+
+    /* Set a specific height */
+    min-height: 37vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: epeat;
+    background-size: cover;
+}
+.parallax1 {
+    /* The image used */
+    background-image: url("parallax2.png");
+
+    /* Set a specific height */
+    min-height: 400px;
+ 
+    /* opacity: 40%; */
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lineafterparallax {
+    background-color: rgb(54, 53, 53);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
+.afterline {
+    border-top: 4px solid yellow;
+    border-bottom: 4px solid yellow;
+    border-right: 5px solid yellow;
+    border-radius: 10mm;
+    background-color: rgb(54, 53, 53);
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-top: 24px;
+    margin-right: 5mm;
+    margin-left: 270mm;
+
+}
+
+.insertimgright {
+    float: left;
+    width: 30 px;
+    height: 30 px;
+}
+
+.unnecessary {
+    float: left;
+    width: 100%;
+    margin-top: 3cm;
+}
+
+img {
+    height: 50px;
+
+}
+
+.grad3 {
+    float: none;
+    overflow: hidden;
+    height: 8vw;
+    width: 100%;
+    background-color: black;
+    /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, black, grey);
+
+}
+
+.gradtext {
+    float: left;
+    overflow: hidden;
+    font-size: 2vw;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-clip: black;
+    background: -webkit-linear-gradient(black,white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradtextonbgimg {
+    float: left;
+    overflow: hidden;
+    font-size: 2vw;
+    position: absolute;
+    margin: 5% 17%; 
+    top: 15vw; 
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgba(19, 66, 219, 0.63);
+   
+
+}
+.gradtextonbgimg1 {
+    overflow: hidden;
+    left: 1%;
+    right: 30%;
+    font-size: 30px;
+    
+    /* align-content: center; */
+    position: relative;
+    /* text-align: center; */
+    top: 40px;
+    /* text-align: center;    */
+}
+.gradtextonbgimg div:hover{
+
+   
+    border-left-color: red;
+    margin-left: 0.8vw;
+    border-left: 0.6vw solid grey;
+    border-style: inset;
+    font-style: bold;
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: .6s;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.box{
+    float: left;
+    transform: translateY(-140%);
+    border: 0.2vw solid transparent;
+ 
+  
+    text-align: center;
+    /* padding: 12px; */
+    text-decoration: none;
+    font-size: 0.8vw;
+    line-height: 1vw;
+    border-radius: 0.3vw;
+    border-image: conic-gradient(from var(--angle), var(--z2), var(--c1) 0.1turn, var(--z1) 0.15turn, var(--z2) 0.25turn) 30;
+	animation: borderRotate var(--e) linear infinite forwards;
+}
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+:root {
+	--e: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--z1: blue;
+	--z2: transparent;
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu {
+      width:100%;
+      font-size: 2vw;
+      border: 0.5vw;
+     
+    }
+    .gradtext{
+        width: 100%;
+        font-size: 4vw;
+        padding: 4% 10%;
+
+    }
+    .grad3{
+        width: 100%;
+        height: 20vw;
+    }
+    .menu2{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+
+    .menu2 a{
+        font-size: 2vw;
+        margin: 0% 0%;
+        padding: -1% 0%;
+    }
+    .gradtextonbgimg{
+        float: left;
+        margin: 30% 0%;
+        width: 100%;
+        font-size: 3vw;
+    }
+    .parallax{
+        min-height: 37vh;
+    }
+  }
